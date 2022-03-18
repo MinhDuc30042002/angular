@@ -1,0 +1,29 @@
+<table id="products" class="table-hover mt-4">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name product</th>
+            <th scope="col">Code</th>
+            <th scope="col">Release Date</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+            <th scope="col">Star Rating</th>
+            <th scope="col">Image</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let product of products">
+        <tr>
+            <td scope="row">{{product.productId}}</td>
+            <td>{{product.productName}}</td>
+            <td>{{product.productCode}}</td>
+            <td>{{product.releaseDate}}</td>
+            <td>{{product.description}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.starRating}}</td>
+            <td>
+                <img src="{{product.imageUrl}}" alt="Hình ảnh sản phẩm">
+            </td>
+
+        </tr>
+    </tbody>
+</table>
